@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Balsamiq+Sans&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  
+}
+
+body{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+:root{
+  --ballo: 'Baloo 2', cursive;
+  --bals: 'Balsamiq Sans', cursive;
+}
+
+
+.container{
+  width: 500px;
+  min-height: 600px;
+  /* background-color: aquamarine; */
+  /* border-radius: 10px; */
+  border: 2px solid #000;
+  border-radius: 20px;
+
+}
+
+.container .Img{
+  width: 100%;
+  min-height: 300px;
+  /* background-color: orange; */
+  /* border-radius: 10px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.container .Img img{
+  width: 200px;
+}
+.container .Content{
+  width: 100%;
+  min-height: 300px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+.container .Content .item{
+  width: 100%;
+  min-height: 80px;
+  /* background-color: blueviolet; */
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.container .Content .item .items{
+  width: 150px;
+  min-height: 80px;
+  /* background-color: gold; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  
+}
+
+.container .Content .item .items h3{
+  font-family: var(--bals);
+  color: black;
+  
+}
+
+.container .Content .item .items p{
+  font-family: var(--ballo);
+  font-size: 20px;
+  color: #6a329f;
+  
+  font-weight: 600;
+}
+
+h2{
+  font-family: var(--bals);
+  text-align: center;
+  padding: 20px 10px 0 10px;
+}
+
+span{
+  color: #f44336;
+}
+
+#Four{
+  color: red;
+}
+
+@media screen and (max-width:800px) {
+  .container{
+    width: 95%;
+  }
+  .container .Content .item .items p{
+   
+    font-size: 15px;
+    
+  }
+  
+  h3{
+    font-size: 16px;
+  }
+}
